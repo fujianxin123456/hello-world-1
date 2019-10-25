@@ -1,5 +1,5 @@
-//实现代码判断2个float变量相等
-//误差精确到时小数点后5位
+//ʵ�ִ����ж�2��float�������
+//��ȷ��С�����5λ 
 #include <stdio.h>
 int main()
 {
