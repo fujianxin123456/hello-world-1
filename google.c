@@ -3,20 +3,25 @@
 //f(1) = 1。
 //求另一个f(n)=n的n值
 #include <stdio.h>
-int main() 
-{
-	int n =199990 , a = 1, i, f = 0;
-        for(i = 1;i <= n; i++)
-           {
-               int t = i;
-               while(t)
-               {
-                   if(t % 10 == 1) f++;
-                   t/=10;
-               }
-            }
-        if(f == n)
-		a = n;  
-    printf("%d", a);
+int main() {
+	int i, n, f = 1, a = 0;
+	for(n = 1; f == 1; n++)
+	{	
+		i = n;
+		while(i)
+		{
+		    if(i % 10 == 1)	
+		   {
+		    a = a + 1;
+ 	       }
+		    i = i / 10;
+	    }
+	    printf("%d %d\n", n, a);
+	    if(n == a)
+	    f = a;
+	}
 	return 0;
-}  
+}
+ 
+
+
